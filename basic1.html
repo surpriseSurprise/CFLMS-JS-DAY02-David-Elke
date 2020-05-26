@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+</head>
+<body>
+    <script>
+        var temperature = Math.round(Math.random() * 25) - 5;
+        document.write("The temperature is " + temperature + "° degrees: ");
+        if (temperature < 15) {
+            document.write("The weather is cold.");
+        }
+        else {
+            document.write("The weather is moderate.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    students = ["Martin", "Thomas", "Klaus", "Maria", "David"];
+    var average = [76, 85, 65, 93, 81];
+    var points = [60, 70, 80, 90, 100];
+    var grade = ["F", "D", "C", "B", "A"];
+
+    if (average[0] > 70) {
+        document.write(students[0] +"'s grade is " + grade[2] + "." + "<br>");
+    }
+    
+    if (average[1] >= 85) {
+        document.write(students[1] +"'s grade is " + grade[3] + "." + "<br>");
+    }
+
+    if (average[2] > 60) {
+        document.write(students[2] +"'s grade is " + grade[1] + "." + "<br>");
+    }
+
+    if (average[3] > 90) {
+        document.write(students[3] +"'s grade is " + grade[4] + "." + "<br>");
+    }
+
+    if (average[4] > 80) {
+        document.write(students[4] +"'s grade is " + grade[3] + "." + "<br>" + "<br>");
+    }
+
+    result = (average[0] + average[1] + average[2] + average[3] + average[4]) / 5;
+
+    console.log(result); 
+
+    document.write("The class average grade is " + grade [3] + "." + "<br>"  + "<br>")
+
+    </script>
+</body>
+</html>
+
+Create a JavaScript program that will show the average grade for each student.
+Here are the points for each student:
+
+Martin = 76
+
+Thomas = 85
+
+Klaus = 65
+
+Maria = 93
+
+David = 81
+
+Based on their points, output the grade, according to the following table:
+
+< 60 F
+
+< 70 D
+
+< 80 C
+
+< 90 B
+
+< 100 A
+
+Finally, calculate the class average and output it (e.g. if the class average is 74 points, their average grade will be C).

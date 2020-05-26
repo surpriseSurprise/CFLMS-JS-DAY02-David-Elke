@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+</head>
+<body>
+<!-- this file contains some errors (h1 styling, images the wrong way round), TBD -->
+
+<style>
+@media screen and (max-width: 481px) {
+    body {
+    height: 25%;
+    width: 25%;}
+}
+</style>
+
+    <div >
+        <h1 id="messagecold">
+        <img id="messagecold" src="img/cat2a.jpg" height=50% width=50%></h1>
+    </div>
+
+    <div >
+        <h1 id="messagemod">
+        <img id="messagemod" src="img/cat2.jpg" height=50% width=50%></h1>
+    </div>
+    
+
+    <script>
+        var temperature = Math.round(Math.random() * 25) - 5;
+        document.write("(The temperature is " + temperature + "° degrees.)");
+        if (temperature < 15) {
+            document.getElementById("messagecold").innerHTML = "The weather is cold.";
+        }
+        else {
+            document.getElementById("messagemod").innerHTML = "The weather is moderate.";
+        }
+    </script>
+</body>
+</html>
